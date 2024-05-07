@@ -1,0 +1,93 @@
+﻿@model IEnumerable<DBDisconnectedOrientedMVC.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+    <p class="btn btn-toolbar">
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table-danger">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpDOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpDept)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpSalary)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpDOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpDept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpSalary)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.EmpID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.EmpID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.EmpID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+     </div>
+</body>
+</html>

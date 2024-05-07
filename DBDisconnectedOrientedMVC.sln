@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBDisconnectedOrientedMVC", "DBDisconnectedOrientedMVC\DBDisconnectedOrientedMVC.csproj", "{F5F68B81-B395-4992-AE87-4AF6280020DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F68B81-B395-4992-AE87-4AF6280020DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F68B81-B395-4992-AE87-4AF6280020DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F68B81-B395-4992-AE87-4AF6280020DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F68B81-B395-4992-AE87-4AF6280020DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7771F54-D5F4-4E5F-9811-DD0B40CF2FD9}
+	EndGlobalSection
+EndGlobal
